@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .clock {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    position: relative;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .center {
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  
+  .hand {
+    position: absolute;
+    background: white;
+    border-radius: 6px;
+    transform-origin: bottom center;
+    transition: all 0.05s ease-in-out;
+  }
+  
+  .hour {
+    width: 6px;
+    height: 70px;
+    top: 80px;
+    left: 147px;
+    background: #ffffff;
+    z-index: 3;
+  }
+  
+  .minute {
+    width: 4px;
+    height: 100px;
+    top: 50px;
+    left: 148px;
+    background: #ddd;
+    z-index: 2;
+  }
+  
+  .second {
+    width: 2px;
+    height: 120px;
+    top: 30px;
+    left: 149px;
+    background: #ff4c4c;
+    z-index: 1;
+  }
+  
+.number {
+    position: absolute;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Position each number in a circle */
+  .number1  { top: 35px;  left: 215px; }
+  .number2  { top: 75px;  left: 255px; }
+  .number3  { top: 145px; left: 270px; }
+  .number4  { top: 215px; left: 255px; }
+  .number5  { top: 255px; left: 215px; }
+  .number6  { top: 270px; left: 145px; }
+  .number7  { top: 255px; left: 75px; }
+  .number8  { top: 215px; left: 35px; }
+  .number9  { top: 145px; left: 20px; }
+  .number10 { top: 75px;  left: 35px; }
+  .number11 { top: 35px;  left: 75px; }
+  .number12 { top: 20px;  left: 145px; }
+  
